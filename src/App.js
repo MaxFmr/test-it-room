@@ -1,11 +1,7 @@
-import "./App.css";
-
+import './App.css';
+import Home from './components/Component1/Home';
 function App() {
-  return (
-    <div>
-      Hello from <a href="https://www.lereacteur.io">Le Reacteur !</a>
-    </div>
-  );
+  return <Home />;
 }
 
 export default App;
