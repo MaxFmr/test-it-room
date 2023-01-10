@@ -1,7 +1,15 @@
 import './App.css';
-import Home from './components/Component1/Home';
+
+import Home from './components/Home/Home';
+import Header from './components/Header/Header';
+
 function App() {
-  return <Home />;
+  return (
+    <>
+      <Header />
+      <Home />
+    </>
+  );
 }
 
 export default App;
