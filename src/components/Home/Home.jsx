@@ -17,26 +17,34 @@ const Home = () => {
     fetchData();
   }, []);
 
+  const searchTitle = async (title) => {
+    const response = await axios.get(
+      `${process.env.REACT_APP_FAKESTORE_URL}?title=${search}`
+    );
+    console.log(response);
+    setData(response.data);
+  };
+
   return (
     <StyledHomePage>
       <h1>Ma super page de recherche</h1>
-      <input
-        type='text'
-        placeholder='Rechercher un titre'
-        onChange={(e) => {
-          setSearch(e.target.value);
-        }}
-      />
+      <div className='searchBar'>
+        <input
+          type='text'
+          placeholder='Rechercher un titre'
+          onChange={(e) => {
+            setSearch(e.target.value);
+          }}
+        />
+        <button onClick={() => searchTitle(search)}>OK</button>
+      </div>
+
       <div className='cardList'>
         {!data ? (
           <span>Loading...</span>
         ) : (
           data.map((post) => {
-            return (
-              post.title.toLowerCase().includes(search) && (
-                <Card key={post.id} post={post} />
-              )
-            );
+            return <Card key={post.id} post={post} />;
           })
         )}
       </div>

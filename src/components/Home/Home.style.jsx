@@ -12,15 +12,36 @@ const StyledHomePage = styled.section`
     align-items: center;
     justify-content: center;
   }
-  input {
+  .searchBar {
+    overflow: hidden;
+
     width: 80%;
     margin: 5% 5%;
     border: solid 1px #0000001a;
     height: 40px;
     border-radius: 20px;
     padding-left: 20px;
-    font-style: italic;
     color: #0000001a;
+    display: flex;
+    justify-content: space-between;
+    input {
+      width: 80%;
+      border: none;
+      font-style: italic;
+      :focus-visible {
+        outline: none;
+        border-radius: none;
+      }
+    }
+    button {
+      height: 100%;
+      border: none;
+      overflow: hidden;
+      background-color: green;
+      color: white;
+      width: 50px;
+      font-weight: bolder;
+    }
   }
 `;
 export default StyledHomePage;
