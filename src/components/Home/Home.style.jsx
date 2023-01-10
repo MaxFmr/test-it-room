@@ -16,8 +16,8 @@ const StyledHomePage = styled.section`
     width: 80%;
     margin: 5% 5%;
     border: solid 1px #0000001a;
-    height: 30px;
-    border-radius: 15px;
+    height: 40px;
+    border-radius: 20px;
     padding-left: 20px;
     font-style: italic;
     color: #0000001a;

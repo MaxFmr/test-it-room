@@ -21,6 +21,8 @@ const StyledCard = styled.section`
     margin-top: 20px;
     text-align: center;
     font-weight: bolder;
+    margin-left: 5px;
+    margin-right: 5px;
   }
   p {
     font-size: smaller;
