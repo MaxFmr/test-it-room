@@ -24,6 +24,7 @@ const StyledHomePage = styled.section`
     color: #0000001a;
     display: flex;
     justify-content: space-between;
+    background-color: white;
     input {
       width: 80%;
       border: none;
@@ -41,6 +42,9 @@ const StyledHomePage = styled.section`
       color: white;
       width: 50px;
       font-weight: bolder;
+      :hover {
+        cursor: pointer;
+      }
     }
   }
 `;

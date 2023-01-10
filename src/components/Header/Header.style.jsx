@@ -11,6 +11,9 @@ const StyledHeader = styled.header`
     background: none;
     color: #841918;
     font-weight: bolder;
+    :hover {
+      cursor: pointer;
+    }
   }
 `;
 export default StyledHeader;
