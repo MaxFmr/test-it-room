@@ -8,3 +8,4 @@ $ npm install
 
 $ npm start 
 
+Preview on http://localhost:3000
